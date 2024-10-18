@@ -50,7 +50,6 @@ def pdf_page_to_base64(file_stream):
         img_byte_array.seek(0)
         images.append(img_byte_array.read())
 
-
     return jsonify({"message": "Images converted and kept in memory"}), 200
 
 @app.route('/')
